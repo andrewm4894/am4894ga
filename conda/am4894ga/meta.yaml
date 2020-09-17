@@ -1,0 +1,40 @@
+package:
+  name: am4894ga
+  version: 0.0.2
+source:
+  sha256: 22b1dc1bd04a5543d7ca0d4b3e20d24d054d100bea8d353da3f2facec0d45e2b
+  url: https://files.pythonhosted.org/packages/ec/9b/2ee89b65a06b2699084dd3b77566bedff24dcba49a9f19289a5da8b95110/am4894ga-0.0.2.tar.gz
+about:
+  dev_url: https://andrewm4894.github.io
+  doc_url: https://andrewm4894.github.io
+  home: https://andrewm4894.github.io
+  license: Apache Software
+  license_family: APACHE
+  summary: Helper library for google analytics reporting api
+build:
+  noarch: python
+  number: '0'
+  script: '{{ PYTHON }} -m pip install . -vv'
+extra:
+  recipe-maintainers:
+  - andrewm4894
+requirements:
+  host:
+  - pip
+  - python
+  - packaging
+  - google-api-python-client==1.11.0
+  - python-dotenv==0.14.0
+  - pandas==1.1.2
+  - oauth2client==4.1.3
+  run:
+  - pip
+  - python
+  - packaging
+  - google-api-python-client==1.11.0
+  - python-dotenv==0.14.0
+  - pandas==1.1.2
+  - oauth2client==4.1.3
+test:
+  imports:
+  - am4894ga

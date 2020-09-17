@@ -8,6 +8,13 @@ am4894ga: $(SRC)
 	nbdev_build_lib
 	touch am4894ga
 
+build: $(SRC)
+	nbdev_build_lib
+	touch am4894ga
+
+version: $(SRC)
+	nbdev_bump_version
+
 sync:
 	nbdev_update_lib
 
@@ -22,7 +29,7 @@ test:
 	nbdev_test_nbs
 
 release: pypi
-	nbdev_conda_package
+	#nbdev_conda_package
 	nbdev_bump_version
 
 pypi: dist
