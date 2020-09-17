@@ -1,4 +1,9 @@
-# nbdev template
+# am4894ga
+> My helper library for Google Analytics reporting API.
 
-Use this template to more easily create your nbdev project.
 
+foo.
+
+## Install
+
+`pip install am4894ga`
