@@ -4,7 +4,6 @@ __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
 index = {"SCOPES": "00_core.ipynb",
          "KEY_FILE_LOCATION": "00_core.ipynb",
-         "credentials": "00_core.ipynb",
          "ga_to_df": "00_core.ipynb"}
 
 modules = ["core.py"]
